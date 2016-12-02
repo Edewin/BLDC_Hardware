@@ -1,0 +1,280 @@
+EESchema Schematic File Version 2
+LIBS:BLDC_Driver_1-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:motor_drivers
+LIBS:ir2101
+LIBS:BLDC_Driver_1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103C8-RESCUE-BLDC_Driver_1 U?
+U 1 1 582DDF2F
+P 4950 3600
+AR Path="/582DDF2F" Ref="U?"  Part="1" 
+AR Path="/582DDEF5/582DDF2F" Ref="U?"  Part="1" 
+F 0 "U?" H 3650 5250 50  0000 C CNN
+F 1 "STM32F103C8" H 6000 1950 50  0000 C CNN
+F 2 "LQFP48" H 4950 3600 50  0000 C CNN
+F 3 "" H 4950 3600 50  0000 C CNN
+	1    4950 3600
+	1    0    0    -1  
+$EndComp
+Text HLabel 7750 3100 2    60   Output ~ 0
+CH1
+Text HLabel 7750 3250 2    60   Output ~ 0
+CH2
+Text HLabel 7750 3400 2    60   Output ~ 0
+CH3
+Text HLabel 2200 4800 0    60   Output ~ 0
+CH1N
+Text HLabel 2200 4950 0    60   Output ~ 0
+CH2N
+Text HLabel 2200 5100 0    60   Output ~ 0
+CH3N
+Wire Wire Line
+	6450 3200 7100 3200
+Wire Wire Line
+	7100 3200 7100 3250
+Wire Wire Line
+	6450 3300 7050 3300
+Wire Wire Line
+	7050 3300 7050 3400
+Wire Wire Line
+	2700 4800 3450 4800
+Wire Wire Line
+	2700 4950 3150 4950
+Wire Wire Line
+	3150 4950 3150 4900
+Wire Wire Line
+	3150 4900 3450 4900
+Wire Wire Line
+	3450 5000 3300 5000
+Wire Wire Line
+	3300 5000 3300 5100
+Wire Wire Line
+	3300 5100 2700 5100
+Text HLabel 7300 2200 2    60   Input ~ 0
+Current_Feedback_ADC
+Text HLabel 7300 2350 2    60   Input ~ 0
+BusVoltage_Feedback_ADC
+Wire Wire Line
+	7300 2200 6750 2200
+Wire Wire Line
+	6750 2200 6750 2300
+Wire Wire Line
+	6750 2300 6450 2300
+Wire Wire Line
+	6450 2400 6950 2400
+Wire Wire Line
+	6950 2400 6950 2350
+Wire Wire Line
+	6950 2350 7300 2350
+Text HLabel 3000 4650 0    60   Input ~ 0
+BKIN_OverCurrentProtection
+Wire Wire Line
+	3000 4650 3200 4650
+Wire Wire Line
+	3200 4650 3200 4700
+Wire Wire Line
+	3200 4700 3450 4700
+$Comp
+L Crystal Y?
+U 1 1 58360265
+P 2300 2600
+F 0 "Y?" H 2300 2750 50  0000 C CNN
+F 1 "Crystal" H 2300 2450 50  0000 C CNN
+F 2 "" H 2300 2600 60  0000 C CNN
+F 3 "" H 2300 2600 60  0000 C CNN
+	1    2300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 583602A8
+P 1900 2850
+F 0 "C?" H 1925 2950 50  0000 L CNN
+F 1 "C" H 1925 2750 50  0000 L CNN
+F 2 "" H 1938 2700 30  0000 C CNN
+F 3 "" H 1900 2850 60  0000 C CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58360314
+P 2700 2850
+F 0 "C?" H 2725 2950 50  0000 L CNN
+F 1 "C" H 2725 2750 50  0000 L CNN
+F 2 "" H 2738 2700 30  0000 C CNN
+F 3 "" H 2700 2850 60  0000 C CNN
+	1    2700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2600 2150 2600
+Wire Wire Line
+	2450 2600 2700 2600
+Wire Wire Line
+	2700 2400 2700 2700
+Wire Wire Line
+	1900 2300 1900 2700
+Wire Wire Line
+	1900 3000 1900 3100
+Wire Wire Line
+	1900 3100 2700 3100
+Wire Wire Line
+	2700 3100 2700 3000
+$Comp
+L GNDA #PWR?
+U 1 1 5836A6E0
+P 2350 3200
+F 0 "#PWR?" H 2350 2950 50  0001 C CNN
+F 1 "GNDA" H 2350 3050 50  0000 C CNN
+F 2 "" H 2350 3200 60  0000 C CNN
+F 3 "" H 2350 3200 60  0000 C CNN
+	1    2350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3200 2350 3100
+Connection ~ 2350 3100
+Wire Wire Line
+	3450 2600 3250 2600
+Wire Wire Line
+	3250 2600 3250 2300
+Wire Wire Line
+	3250 2300 1900 2300
+Connection ~ 1900 2600
+Wire Wire Line
+	3450 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2400
+Wire Wire Line
+	3100 2400 2700 2400
+Connection ~ 2700 2600
+$Comp
+L R R?
+U 1 1 5836C29B
+P 7400 3100
+F 0 "R?" V 7480 3100 50  0000 C CNN
+F 1 "1K" V 7400 3100 50  0000 C CNN
+F 2 "" V 7330 3100 30  0000 C CNN
+F 3 "" H 7400 3100 30  0000 C CNN
+	1    7400 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5836C2DE
+P 7400 3250
+F 0 "R?" V 7480 3250 50  0000 C CNN
+F 1 "1K" V 7400 3250 50  0000 C CNN
+F 2 "" V 7330 3250 30  0000 C CNN
+F 3 "" H 7400 3250 30  0000 C CNN
+	1    7400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5836C30A
+P 7400 3400
+F 0 "R?" V 7480 3400 50  0000 C CNN
+F 1 "1K" V 7400 3400 50  0000 C CNN
+F 2 "" V 7330 3400 30  0000 C CNN
+F 3 "" H 7400 3400 30  0000 C CNN
+	1    7400 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5836C333
+P 2550 4800
+F 0 "R?" V 2630 4800 50  0000 C CNN
+F 1 "1K" V 2550 4800 50  0000 C CNN
+F 2 "" V 2480 4800 30  0000 C CNN
+F 3 "" H 2550 4800 30  0000 C CNN
+	1    2550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5836C39D
+P 2550 4950
+F 0 "R?" V 2630 4950 50  0000 C CNN
+F 1 "1K" V 2550 4950 50  0000 C CNN
+F 2 "" V 2480 4950 30  0000 C CNN
+F 3 "" H 2550 4950 30  0000 C CNN
+	1    2550 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5836C3DC
+P 2550 5100
+F 0 "R?" V 2630 5100 50  0000 C CNN
+F 1 "1K" V 2550 5100 50  0000 C CNN
+F 2 "" V 2480 5100 30  0000 C CNN
+F 3 "" H 2550 5100 30  0000 C CNN
+	1    2550 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3100 7550 3100
+Wire Wire Line
+	7250 3100 6450 3100
+Wire Wire Line
+	7100 3250 7250 3250
+Wire Wire Line
+	7550 3250 7750 3250
+Wire Wire Line
+	7550 3400 7750 3400
+Wire Wire Line
+	7050 3400 7250 3400
+Wire Wire Line
+	2400 4800 2200 4800
+Wire Wire Line
+	2200 4950 2400 4950
+Wire Wire Line
+	2200 5100 2400 5100
+$EndSCHEMATC
