@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:BLDC_Driver_1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:stm32
 LIBS:motor_drivers
+LIBS:ir2101
+LIBS:BLDC_Driver_1-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

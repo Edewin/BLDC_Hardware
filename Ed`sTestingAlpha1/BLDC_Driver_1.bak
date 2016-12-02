@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:BLDC_Driver_1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +31,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:stm32
 LIBS:motor_drivers
+LIBS:ir2101
+LIBS:BLDC_Driver_1-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -45,16 +48,19 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2000 2900 1500 1850
+S 1500 3400 1950 850 
 U 582DDEF5
 F0 "MCU" 60
 F1 "MCU.sch" 60
-F2 "PWM_1" O R 3500 3050 60 
-F3 "PWM_2" O R 3500 3200 60 
-F4 "PWM_3" O R 3500 3400 60 
-F5 "PWM_4" O R 3500 3550 60 
-F6 "PWM_5" O R 3500 3750 60 
-F7 "PWM_6" O R 3500 3900 60 
+F2 "CH1" O R 3450 3550 60 
+F3 "CH2" O R 3450 3650 60 
+F4 "CH3" O R 3450 3750 60 
+F5 "CH1N" O R 3450 3900 60 
+F6 "CH2N" O R 3450 4000 60 
+F7 "CH3N" O R 3450 4100 60 
+F8 "Current_Feedback_ADC" I L 1500 3600 60 
+F9 "BusVoltage_Feedback_ADC" I L 1500 3700 60 
+F10 "BKIN_OverCurrentProtection" I L 1500 3800 60 
 $EndSheet
 $Sheet
 S 4300 2700 1400 1950

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:BLDC_Driver_1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -80,17 +81,6 @@ F 3 "" H 5750 5050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D?
-U 1 1 5831CCE5
-P 5650 2200
-F 0 "D?" H 5650 2300 50  0000 C CNN
-F 1 "D" H 5650 2100 50  0000 C CNN
-F 2 "" H 5650 2200 50  0000 C CNN
-F 3 "" H 5650 2200 50  0000 C CNN
-	1    5650 2200
-	-1   0    0    1   
-$EndComp
-$Comp
 L CP C?
 U 1 1 5831D201
 P 6500 2550
@@ -123,12 +113,16 @@ Wire Wire Line
 Wire Wire Line
 	4900 2200 4900 2300
 Wire Wire Line
-	4450 2300 5150 2300
+	4450 2300 4900 2300
+Wire Wire Line
+	4900 2300 5150 2300
 Connection ~ 4900 2300
 Wire Wire Line
 	4450 2400 4450 2300
 Wire Wire Line
-	6500 2200 6500 2400
+	6500 2200 6500 2300
+Wire Wire Line
+	6500 2300 6500 2400
 Wire Wire Line
 	6250 2300 6500 2300
 Wire Wire Line
@@ -146,4 +140,15 @@ Wire Wire Line
 	6400 2750 6500 2750
 Wire Wire Line
 	6500 2750 6500 2700
+$Comp
+L D_Schottky D?
+U 1 1 5836BF60
+P 5650 2200
+F 0 "D?" H 5650 2300 50  0000 C CNN
+F 1 "D_Schottky" H 5650 2100 50  0000 C CNN
+F 2 "" H 5650 2200 60  0000 C CNN
+F 3 "" H 5650 2200 60  0000 C CNN
+	1    5650 2200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
